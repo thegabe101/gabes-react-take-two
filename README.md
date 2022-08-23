@@ -1,1 +1,0 @@
-# react-portfolio-gabriel-sowa
