@@ -4,7 +4,27 @@ import ReactDOM from 'react-dom';
 // import './styles.css';
 import App from './App';
 // import Header from './components/Header'
+//need to import browser router in order to define router
+// import { BrowserRouter as Router } from "react-router-dom";
 
+//going to render this the 17.0 way since that's what we learned in class.
+//it throws an error but still functions perfectly.
+
+//need to restructure this to multiline in order to use router when we have multiple components
+
+ReactDOM.render(
+  <React.StrictMode>
+    {/* <Router> */}
+    <App />
+    {/* </Router> */}
+  </React.StrictMode>,
+  document.getElementById('root'));
+
+
+
+
+
+//throwing this at the bottom because we will likely be rendering our app above through the app.js render call
 
 // function App() {
 //   return (
@@ -16,12 +36,6 @@ import App from './App';
 //     </div>
 //   );
 // }
-
-
-
-//going to render this the 17.0 way since that's what we learned in class.
-//it throws an error but still functions perfectly.
-ReactDOM.render(<App />, document.getElementById('root'));
 
 
 

@@ -1,3 +1,5 @@
+/*structures our component, sticks it to the top*/
+/*creates a grid template*/
 .Header {
     position: fixed;
     top: 0; /* Stick it to the top */
@@ -16,7 +18,9 @@
     grid-area: logo;
     height: 70px;
   }
-  
+  /*giving nav a name so that it can be references in the parent element, header*/
+  /*block level grid allows us to nest anything, and we split our grid into four columns for portfolio, about me, etc.*/
+  /*building upon the row axis with centered children elements*/
   .Nav {
     display: grid;
     grid-area: nav;
@@ -69,6 +73,8 @@
     transform: scale(1.2);
   }
   
+  /*making the header responsive*/
+  /*when the screen size matches the query, the header will change into a row with the top head and two columns plus the 3 rows below*/
   @media (max-width: 700px) {
     .Header {
       grid-template-areas: "logo burger" "nav nav";

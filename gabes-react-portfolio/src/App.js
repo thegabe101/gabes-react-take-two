@@ -1,15 +1,14 @@
 //here we will create our primary app drawer
 import React from 'react';
 import Header from './components/Header'
+import Footer from './components/Footer';
 
 
 export default function App() {
   return (
     <div className='App'>
       <Header />
-      <div className='Content'>
-        <p>Header might work...</p>
-      </div>
+      <Footer />
     </div>
   )
 }
