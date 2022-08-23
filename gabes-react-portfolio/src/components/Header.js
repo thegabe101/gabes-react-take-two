@@ -1,6 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
+// import { Route, Redirect, HashRouter } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+//will need to make a number of component imports here based on what we are linking in our navbar
+// import Contact from "../components/Contact.js";
+// import AboutMe from "../../components/AboutMe.js";
+// import Resume from '../../components/Resume.js';
+// import Portfolio from "../../components/Portfolio.js";
 
 //use state imported from react above
 export default function Header() {
@@ -46,15 +53,17 @@ export default function Header() {
                 unmountOnExit
             >
                 <nav className="Nav">
-                    <a href="/">About Me</a>
-                    <a href="/">Portfolio</a>
-                    <a href="/">Contact</a>
-                    <a href="/">Resume</a>
-                </nav>
-            </CSSTransition>
+                    <Link to="/aboutme">About Me</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contact</Link>
+                    {/* <Route path="/contact" component={Contact} Contact /> */}
+                    {/* <NavLink to="/Contact">Contact</NavLink> */}
+                    <Link to="/resume">Resume</Link >
+                </nav >
+            </CSSTransition >
             <button onClick={toggleNav} className="Burger">
                 🍔
             </button>
-        </header>
+        </header >
     );
 }

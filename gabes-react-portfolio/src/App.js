@@ -2,13 +2,29 @@
 import React from 'react';
 import Header from './components/Header'
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import Contact from './components/Contact';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+//in case we want to use bootstrap later, will import 
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App() {
   return (
     <div className='App'>
-      <Header />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+        <Footer />
+
+      </Router>
     </div>
   )
 }
