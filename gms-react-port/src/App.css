@@ -1,0 +1,351 @@
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background: #282c34;
+}
+
+/*significant trouble getting my first and last name to align on the same block within the navbar*/
+
+header {
+  background-color: slategrey;
+}
+
+h1 {
+  padding-top: 15px;
+  height: 65px;
+  background-color: lightblue;
+  color: whitesmoke;
+  padding-inline-start: 3em;
+  text-indent: 20px;
+  flex-wrap: wrap;
+  margin-right: 0;
+  padding: 15px 10px 0 35px;
+  text-shadow: 2px 2px 2px slategrey;
+}
+
+/*can't figure out how to align subtitle on right side*/
+
+.main-nav a {
+  font-weight: 300;
+  background-color: slategrey;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  align-items: center;
+  color: rgb(211, 236, 245);
+  text-decoration: underline solid 2px;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 3em;
+}
+
+.main-nav > .container > a:hover {
+  color: rgb(252, 253, 253);
+}
+
+.main-nav .container {
+  display: flex;
+}
+
+
+header a {
+  background: no-repeat;
+  background-position: center bottom;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding: 15px;
+  text-shadow: 4px 4px 4px black;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+}
+
+/*found creating a direct descendant useful here*/
+
+.banner > .banner-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  min-height: 250px;
+  object-fit: cover;
+  border-bottom: solid 2px black;
+}
+
+
+#ul {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 3%;
+  padding: 1em 2em 1em 3em;
+  background-color: steelblue;
+  color: lightcyan;
+  border: solid gray 10px;
+  border-radius: 5em;
+  font-weight: 200;
+  font-size: large;
+  line-height: 30px;
+  box-shadow: 10px 10px 10px black;
+}
+
+main {
+  background-color: slategrey;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+}
+
+#bodyparagraph {
+  border: white 2px solid;
+  border-radius: 15%;
+  margin:auto 25px;
+  color:rgb(211, 236, 245);
+  margin-top: 1%;
+  padding: 0 25px;
+  font-size: larger;
+  box-shadow: 2px 2px 2px 2px honeydew;
+  margin-bottom: 50px;
+  align-self: flex-start;
+}
+
+/*this row is really tricky. im trying to create a good flexbox for my project cards but it is messing up the heading as well*/
+
+.projects {
+  display: flex;
+  flex-direction:row;
+}
+
+.projectcards {
+  width: 100px;
+  height: 100px;
+  justify-content: space-evenly;
+  display:flex;
+  top:0; right: 0; left: 0; bottom: 0;
+  margin: 50px 25px 25px 25px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96lrvoXbEiXlbj9_Czn6FwsFICjdoxiN_KQ&usqp=CAU");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  }
+
+/*big issues spacing project cards. something to do w padding and margin*/
+
+.projectcards2 {
+      width:100px;
+      height: 100px;
+      display:flex;
+      top:0; right: 0; left: 0; bottom: 0;
+      margin-left: 25px 25px 25px 25px;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2cUOl5sUejpuM-xE6TM-i63jqK5afBsNW7w&usqp=CAU");
+      background-color: black;
+      background-size: cover;
+      cursor: pointer;
+      justify-content: space-evenly;
+      -webkit-box-shadow: 0 0 5px #000;
+      box-shadow: 0 0 5px #000;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right:22px
+      }
+
+
+/*ended up using margin to "cheat" on project cards. need to figure this out in the future*/
+
+.projectcards3 {
+  width:100px;
+  height: 100px;
+  display:flex;
+  top:0; right: 0; left: 0; bottom: 0;
+  margin-left: 25px 25px 25px 25px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHYYzqwhaXLwlaF1LS3hij2tTajp5EjIkMUA&usqp=CAU");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  justify-content: space-evenly;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  margin-top: 50px;
+  margin-left: 50px;
+      }
+
+h2 {
+  margin-left: 10px;
+  font-size: xx-large;
+  color: rgb(211, 236, 245);
+  padding: 50px 15px 35px 15px;
+}
+
+#h2-1 {
+  border: silver 5px solid;
+  border-block-end-style:ridge;
+  background-image: url('./images/dfe0f8f67462bc006e1a96f8ea4d9c2f.jpg');
+  box-shadow: 2px 2px 2px 2px honeydew;
+  filter: grayscale(70%);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutMeText {
+  background-color: rgba(0, 0, 0, 0.469);
+}
+
+.textbackdrop1 {
+  background-color: rgba(24, 23, 22, 0.596);
+  width: 105px;
+  color: whitesmoke;
+}
+
+.textbackdrop {
+  background-color: rgba(24, 23, 22, 0.596);
+}
+
+TODO:create border point between work and photos
+
+#h2-1 {
+  color: rgb(211, 236, 245);
+  justify-content: flex-start;
+  text-decoration: underline;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding-bottom: 0;
+}
+
+.photoex img {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  flex: 0 0 300px;
+  box-shadow: 3px 3px 3px cornflowerblue;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+
+/*extensive trouble with extra blank space under footer. ask*/
+
+footer {
+  height: 100%;
+  width: 100%;
+  text-indent: 5%;
+  padding-top: 0.2em;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  background-color: #333;
+  border-top: solid 3px black;
+  text-shadow: 2px 2px 2px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*would like to be able to make the black backdrop of the 'contact me' slightly transparent. hsl was not the answer*/
+
+h3 {
+  background-color: #00000080;
+  color: aliceblue;
+  border-radius: 50%;
+  padding: 1em 1em 1em 1em; 
+  text-align: justify;
+  box-shadow: 10px 10px 10px black;
+}
+
+footer p {
+  color:white;
+  font-weight: bolder;
+}
+
+#spang {
+  color: #4285F4;
+  border-radius: 50%;
+}
+
+#spanm {
+  color: #BB001B;
+}
+
+#spana {
+  color: #EA4335;
+}
+
+#spani {
+  color: #FBBC05;
+}
+
+#spanl {
+  color: #34A853;
+}
+
+#span2 {
+  background-color: #817f7f;
+  color: #171515;
+  border-radius: 50%;
+  padding: 1em 1em 1em 1em; 
+  box-shadow: 10px 10px 10px black;
+}
+
+#span3 {
+  background-color: #191414;
+  color: #81b71a;
+  border-radius: 50%;
+  padding: 1em 1em 1em 1em; 
+  box-shadow: 10px 10px 10px black;
+}
+
+#span4 {
+  background-color: aliceblue;
+  color: #0072b1;
+  border-radius: 50%;
+  padding: 1em 1em 1em 1em;
+  box-shadow: 10px 10px 10px black; 
+}
+
+/*lots of difficulty with media queries. not sure I can figure this one out*/
+
+@media screen and (max-width: 800px) {
+  .projects {
+    flex: 50%;
+    max-width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/*got queries working VERY poorly. this is something to get better at.*/
+
+@media screen and (max-width: 600px) {
+  .photos {
+    flex: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

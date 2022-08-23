@@ -1,13 +1,26 @@
+// import React from 'react';
+// import Nav from './Nav';
+
+// function Header() {
+//     return (
+//         <header>
+//             <Nav />
+//         </header>
+//     );
+// }
+
+
+
 import React, { useState, useEffect, Component } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
 // import { Route, Redirect, HashRouter } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 //will need to make a number of component imports here based on what we are linking in our navbar
-import Contact from "./Contact.js";
-import AboutMe from "./AboutMe.js";
-import Resume from './Resume.js';
-import Portfolio from "./Portfolio.js";
+// import Contact from "./Contact.js";
+// import AboutMe from "./AboutMe.js";
+// import Resume from './Resume.js';
+// import Portfolio from "./Portfolio.js";
 
 //use state imported from react above
 export default function Header() {
@@ -41,7 +54,7 @@ export default function Header() {
 
     return (
         <header className="Header">
-            <img src={require("../assets/85-852193_computer-icons-index-arrow-pointer-cursor-nice-icon.png")} className="Logo" alt="logo" />
+            <img src={require("../images/85-852193_computer-icons-index-arrow-pointer-cursor-nice-icon.png")} className="Logo" alt="logo" />
             <CSSTransition
                 //manages header visibility
                 //chooses whether to shown the component or not
@@ -53,12 +66,12 @@ export default function Header() {
                 unmountOnExit
             >
                 <nav className="Nav">
-                    <Link to="/aboutme">About Me</Link>
-                    <Link to="/portfolio">Portfolio</Link>
-                    <Link to="/contact">Contact</Link>
-                    {/* <Route path="/contact" component={Contact} Contact /> */}
-                    {/* <NavLink to="/Contact">Contact</NavLink> */}
-                    <Link to="/resume">Resume</Link >
+                    <a href='#aboutme'>About Me</a>
+                    <a href='#portfolio'>Portfolio</a>
+                    <a href='#contact'>Contact</a>
+                    {/* <Route path='/contact' component={Contact} Contact /> */}
+                    {/* <NavLink to='/Contact'>Contact</NavLink> */}
+                    <a href='#resume'>Resume</a >
                 </nav >
             </CSSTransition >
             <button onClick={toggleNav} className="Burger">
@@ -67,3 +80,5 @@ export default function Header() {
         </header >
     );
 }
+
+// export default Header;

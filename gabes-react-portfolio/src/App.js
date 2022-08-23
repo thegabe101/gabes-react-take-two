@@ -14,17 +14,17 @@ import Resume from './components/Resume';
 export default function App() {
   return (
     <div className='App'>
+      <Header />
       <Router>
-        <Header />
         <Routes>
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-        <Footer />
 
       </Router>
+      <Footer />
     </div>
   )
 }
