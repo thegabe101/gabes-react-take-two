@@ -7,6 +7,12 @@ body {
   padding: 0;
   flex-direction: column;
   background: #282c34;
+  height: 100vh;
+}
+
+.primaryDiv {
+  height: 100vh;
+  width:100%;
 }
 
 .banner {
@@ -27,7 +33,7 @@ body {
   display: flex;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
-  min-height: 250px;
+  min-height: 30vh;
   object-fit:cover;
   border-bottom: solid 2px black;
 }

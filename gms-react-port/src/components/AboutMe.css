@@ -1,7 +1,7 @@
 .flex {
     margin: 0;
     display: flex;
-    height: fit-content;
+    height: 60vh;
 }
 
     .flex div:first-child {
@@ -57,6 +57,12 @@
     background-color: rgba(0, 0, 0, .8);
     background-blend-mode:darken;
 }
+
+@media screen and (max-width: 800px) {
+    .flex {
+        padding-bottom: 25px;
+    }
+  }
 
 /* .aboutMeStuff:after {
     position: absolute;

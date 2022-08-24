@@ -3,7 +3,7 @@
 .Header {
     position: fixed;
     top: 0; /* Stick it to the top */
-    max-height: 70px;
+    height: 10vh;
     width: 100vw;
   
     display: grid;
