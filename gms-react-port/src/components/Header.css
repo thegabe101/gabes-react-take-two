@@ -24,7 +24,7 @@
   .Nav {
     display: grid;
     grid-area: nav;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     align-items: center;
     justify-items: center;
   }
@@ -80,7 +80,7 @@
       grid-template-areas: "logo burger" "nav nav";
     }
     .Nav {
-      grid-template-rows: repeat(4, auto);
+      grid-template-rows: repeat(5, auto);
       grid-template-columns: none;
       grid-row-gap: 20px;
   

@@ -54,7 +54,7 @@ export default function Header() {
 
     return (
         <header className="Header">
-            <img src={require("../images/85-852193_computer-icons-index-arrow-pointer-cursor-nice-icon.png")} className="Logo" alt="logo" />
+            <img src={require("../images/261-2613754_black-and-white-trees-png-tree-silhouette-transparent.png")} className="Logo" alt="logo" />
             <CSSTransition
                 //manages header visibility
                 //chooses whether to shown the component or not
@@ -66,6 +66,7 @@ export default function Header() {
                 unmountOnExit
             >
                 <nav className="Nav">
+                    <a href='#myname' id="myName">My name is Gabriel Sowa. </a>
                     <a href='#aboutme'>About Me</a>
                     <a href='#portfolio'>Portfolio</a>
                     <a href='#contact'>Contact</a>
