@@ -14,8 +14,9 @@
 import React, { useState, useEffect, Component } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
+import { Contact } from "./Contact.js";
 // import { Route, Redirect, HashRouter } from "react-router-dom";
-// import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 //will need to make a number of component imports here based on what we are linking in our navbar
 // import Contact from "./Contact.js";
 // import AboutMe from "./AboutMe.js";
@@ -24,6 +25,7 @@ import { CSSTransition } from "react-transition-group";
 
 //use state imported from react above
 export default function Header() {
+    const [isOpen, setOpen] = useState(false);
     const [isNavVisible, setNavVisibility] = useState(false);
     //Does it match the media query or not? 
     const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -65,14 +67,33 @@ export default function Header() {
                 classNames="NavAnimation"
                 unmountOnExit
             >
-                <nav className="Nav">
+                <nav className="Nav is-primary" role="navigation" aria-label="main navigation">
+                    {/* <div className="navbar-brand">
+                        <a
+                            role="button"
+                            className={`navbar-burger burger ${isOpen && "is-active"}`}
+                            aria-label="menu"
+                            aria-expanded="false"
+                            onClick={() => setOpen(!isOpen)}
+                        >
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div> */}
+                    {/* <div className={`navbar-menu ${isOpen && "is-active"}`}>
+                        <div className="navbar-start"> */}
                     <a href='#myname' id="myName">My name is Gabriel Sowa. </a>
                     <a href='#aboutme'>About Me</a>
                     <a href='#portfolio'>Portfolio</a>
                     <a href='#contact'>Contact</a>
+                    {/* <Link to={Contact}>Contact</Link> */}
+                    {/* <NavLink className='navbar-item' activeClassName="is-active" to="/contact">Contact</NavLink> */}
                     {/* <Route path='/contact' component={Contact} Contact /> */}
                     {/* <NavLink to='/Contact'>Contact</NavLink> */}
                     <a href='#resume'>Resume</a >
+                    {/* </div>
+                    </div> */}
                 </nav >
             </CSSTransition >
             <button onClick={toggleNav} className="Burger">

@@ -16,7 +16,7 @@
   
   .Logo {
     grid-area: logo;
-    height: 70px;
+    height: 65px;
   }
   /*giving nav a name so that it can be references in the parent element, header*/
   /*block level grid allows us to nest anything, and we split our grid into four columns for portfolio, about me, etc.*/

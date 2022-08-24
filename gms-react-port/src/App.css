@@ -7,63 +7,6 @@ body {
   padding: 0;
   flex-direction: column;
   background: #282c34;
-  height: 100%;
-}
-
-/*significant trouble getting my first and last name to align on the same block within the navbar*/
-
-header {
-  background-color: slategrey;
-}
-
-h1 {
-  padding-top: 15px;
-  height: 65px;
-  background-color: lightblue;
-  color: whitesmoke;
-  padding-inline-start: 3em;
-  text-indent: 20px;
-  flex-wrap: wrap;
-  margin-right: 0;
-  padding: 15px 10px 0 35px;
-  text-shadow: 2px 2px 2px slategrey;
-}
-
-/*can't figure out how to align subtitle on right side*/
-
-.main-nav a {
-  font-weight: 300;
-  background-color: slategrey;
-  display: flex;
-  width: 100%;
-  height: 75px;
-  align-items: center;
-  color: rgb(211, 236, 245);
-  text-decoration: underline solid 2px;
-  justify-content: space-evenly;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: right;
-  padding-right: 3em;
-}
-
-.main-nav > .container > a:hover {
-  color: rgb(252, 253, 253);
-}
-
-.main-nav .container {
-  display: flex;
-}
-
-
-header a {
-  background: no-repeat;
-  background-position: center bottom;
-  font-weight: bold;
-  text-decoration: none;
-  position: relative;
-  padding: 15px;
-  text-shadow: 4px 4px 4px black;
 }
 
 .banner {
@@ -85,58 +28,8 @@ header a {
   border-top: solid 1px black;
   border-bottom: solid 1px black;
   min-height: 250px;
-  object-fit: cover;
+  object-fit:cover;
   border-bottom: solid 2px black;
-}
-
-
-#ul {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-  position: absolute;
-  bottom: 20px;
-  right: 3%;
-  padding: 1em 2em 1em 3em;
-  background-color: steelblue;
-  color: lightcyan;
-  border: solid gray 10px;
-  border-radius: 5em;
-  font-weight: 200;
-  font-size: large;
-  line-height: 30px;
-  box-shadow: 10px 10px 10px black;
-}
-
-main {
-  background-color: slategrey;
-}
-
-#bodyparagraph {
-  border: white 2px solid;
-  border-radius: 15%;
-  margin:auto 25px;
-  color:rgb(211, 236, 245);
-  margin-top: 1%;
-  padding: 0 25px;
-  font-size: larger;
-  box-shadow: 2px 2px 2px 2px honeydew;
-  margin-bottom: 50px;
-  align-self: flex-start;
-}
-
-.textbackdrop {
-  background-color: rgba(24, 23, 22, 0.596);
-}
-
-h3 {
-  background-color: #A5C9CA;
-  color: #2C3333;
-  font-weight: 800;
-  border-radius: 50%;
-  padding: 0.5em; 
-  text-align: justify;
-  box-shadow: 10px 10px 10px black;
 }
 
 @media screen and (max-width: 800px) {

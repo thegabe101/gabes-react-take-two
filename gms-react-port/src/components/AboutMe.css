@@ -21,8 +21,13 @@
     margin-top: 0;
     font-weight: 400;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 135px;
+    margin-right: 110px;
+    background-color: #A5C9CA;
+    color: #2C3333;
+    font-weight: 800;
+    padding: 0.1em; 
+    box-shadow: 10px 10px 10px black;
 }
     
 .flex p {
@@ -36,6 +41,7 @@
 
     .flex p:last-of-type {
     margin-bottom: 0;
+    
 }
 
     .flex:first-of-type div:first-child {
