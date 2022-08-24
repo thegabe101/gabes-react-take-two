@@ -1,0 +1,64 @@
+.flex {
+    margin: 0;
+    display: flex;
+    height: fit-content;
+}
+
+    .flex div:first-child {
+    border: black, 10px, solid;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+    .flex div:last-child {
+    flex: 2;
+}
+
+    
+.flex h3 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+    
+.flex p {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #E7F6F2;
+    margin: 20px;
+    z-index: 1;
+}
+
+    .flex p:last-of-type {
+    margin-bottom: 0;
+}
+
+    .flex:first-of-type div:first-child {
+    background-image: url("../images/IMG_0863.JPG");
+}
+
+.aboutMeStuff {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    background-image: url("../images/dfe0f8f67462bc006e1a96f8ea4d9c2f.jpg");
+    background-color: rgba(0, 0, 0, .8);
+    background-blend-mode:darken;
+}
+
+/* .aboutMeStuff:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+} */

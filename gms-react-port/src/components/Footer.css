@@ -1,9 +1,10 @@
 .footer{
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: rgb(235, 195, 64);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    background-color: #395B64;
+    position: relative;
     width: 100%;
+    height:fit-content;
+    color: #E7F6F2;
 }

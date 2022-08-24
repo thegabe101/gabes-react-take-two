@@ -5,10 +5,10 @@ import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 
 function App(props) {
-  const isAboutMe = props.isAboutMe
+  // const isAboutMe = props.isAboutMe
 
   return (
-    <div>
+    <div className='primaryDiv'>
       <Header />
       <figure className="banner">
         <img className="banner-img" src={image1} style={{ height: 50 }} />

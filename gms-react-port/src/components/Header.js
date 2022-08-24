@@ -15,7 +15,7 @@ import React, { useState, useEffect, Component } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
 // import { Route, Redirect, HashRouter } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 //will need to make a number of component imports here based on what we are linking in our navbar
 // import Contact from "./Contact.js";
 // import AboutMe from "./AboutMe.js";
