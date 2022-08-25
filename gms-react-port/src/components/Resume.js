@@ -10,25 +10,33 @@ import js from '../images/javascript2.png';
 import css from '../images/css.png';
 import html5 from '../images/html5.png';
 import mysql from '../images/mysql.png';
+import './Portfolio.css';
 
 export default function Resume() {
     return (
-        <div>
+        <div className="body">
             <Header />
-            <div className="resumePhoto">
-                <a href="https://docs.google.com/document/d/1F-RdjKE3HB8b7B8XwldjqBCBfhzF8X4pzms0GLDetg0/edit"><img src={resumePhoto} alt="a smiling portrait photo in formal clothing" /></a>
-                <div className="resume_content">
-                    <h2>Click here for a closer look at my resume.</h2>
-                    <p>Or check out some of the programming languages I am comfortable with:</p>
+            <div className="trueBody">
+                <h2 className="portfolioTitle">Click the photo for a closer look at my resume.</h2>
+                <div className="resumePhoto">
+                    <a href="https://docs.google.com/document/d/1F-RdjKE3HB8b7B8XwldjqBCBfhzF8X4pzms0GLDetg0/edit?usp=sharing"><img src={resumePhoto} alt="a smiling portrait photo in formal clothing" /></a>
+                    <div className="resume_content">
+                        <p>Or check out some of the programming languages I am comfortable with- HTML5, Javascript, CSS, MySQL, and NoSQL/MongoDB.</p>
+                    </div>
+                </div>
+                <div className="languages">
+                    <div>
+                    <img className="programmingLanguages" src={html5}></img>
+                    </div>
+                    <div>
+                    <img className="programmingLanguages" src={js}></img>
+                    </div>
+                    <img className="programmingLanguages" src={css}></img>
+                    <img className="programmingLanguages" src={mysql}></img>
+                    <img className="programmingLanguages" src={mongoDB}></img>
                 </div>
             </div>
-            <div className="programmingLanguages">
-                <img className="programmingLanguages" src={html5}></img>
-                <img className="programmingLanguages" src={js}></img>
-                <img className="programmingLanguages" src={css}></img>
-                <img className="programmingLanguages" src={mysql}></img>
-                <img className="programmingLanguages" src={mongoDB}></img>
-            </div>
+            <Footer />
         </div>
     );
 }

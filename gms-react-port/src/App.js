@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Outlet, Link } from "react-router-dom";
 import { useState } from 'react';
+// import '../src/Footer.css';
 
 
 //here is our test-working app export function
@@ -17,7 +18,7 @@ export default function App() {
     name: "Bob",
     email: "Bob@gmail.com",
     message: "Hi Gabe, I'd love to work with you!"
-  },{
+  }, {
     name: "Tom",
     email: "Tom@gmail.com",
     message: "Hey, let me know if you would like to work together!"

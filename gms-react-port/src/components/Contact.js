@@ -5,6 +5,7 @@ import getContactData from "../data/contactData";
 import { useEffect, useState } from 'react';
 import Header from './Header';
 import profilePicture from '../images/J Wedding Cropped.jpg';
+import Footer from './Footer'
 
 export default function Contact(props) {
     let contact = getContactData();
@@ -44,6 +45,7 @@ export default function Contact(props) {
                         {contactDat.references}</h2>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 };

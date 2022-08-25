@@ -4,14 +4,46 @@
     flex-direction: column;
     justify-content: flex-end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    margin: auto;
+    margin-left: 10%;
+    height: 60%;
 }
 
 .resume_content {
     position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+    font-size: x-large;
+    font-weight: 500;
 }
 
 .programmingLanguages {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
 }
+
+.languages {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    margin: auto;
+    margin-left: 30%;
+    height: 60%;
+}
+
+@media screen and (max-width: 800px) {
+    .truebody {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+  }

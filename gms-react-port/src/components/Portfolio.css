@@ -1,30 +1,34 @@
 body {
     background-color: #100e17;
     font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
 .portfolioTitle {
-  margin-top: 5%;
+    margin-top: 5%;
     display:block;
     justify-content: center;
     word-wrap: normal;
+    text-align: center;
 }
 
   .container {
-    margin-top: 40vh;
+    margin-top: 30vh;
     position: absolute;
     height: 300px;
     width: 1200px;
     top: 60px;
-    left: calc(30% - 200px);
+    left: calc(23% - 200px);
     display: flex;
     justify-content: space-between;
   }
   
   .card {
     display: flex;
-    height: 380px;
-    width: 300px;
+    height: 300px;
+    width: 200px;
     background-color: #17141d;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
@@ -78,6 +82,7 @@ body {
     left: 20px;
     height: 5px;
     width: 150px;
+    margin-top: 20px;
   }
   
   .emptybar {
