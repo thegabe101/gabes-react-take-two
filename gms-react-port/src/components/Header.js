@@ -44,7 +44,7 @@ export default function Header() {
 
     return (
         <header className="Header">
-            <img src={require("../images/261-2613754_black-and-white-trees-png-tree-silhouette-transparent.png")} className="Logo" alt="logo" />
+            <Link to='/'><img src={require("../images/261-2613754_black-and-white-trees-png-tree-silhouette-transparent.png")} className="Logo" alt="logo" /></Link>
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}
                 timeout={300}

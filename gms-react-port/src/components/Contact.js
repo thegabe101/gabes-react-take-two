@@ -1,22 +1,30 @@
 import React from "react";
 import "./Contact.css";
-import contactData from "../data/contactData";
+import { Link } from "react-router-dom";
+import getContactData from "../data/contactData";
 import { useEffect, useState } from 'react';
+import Header from './Header';
+import profilePicture from '../images/J Wedding Cropped.jpg';
 
 function Contact() {
-    const { users } = contactData;
-    let index = 0;
-
-    const [user, setUser] = useState(users[index]);
+    let contact = getContactData();
 
     return (
         <div className="App">
+            <Header />
+            <figure className="profilePicture">
+                <img src={profilePicture} alt="a smiling profile photo in formal clothing"></img>
+            </figure>
             <div className="contact">
-                <p>First Name: {user.nameFirst}</p>
-                <p>Last Name: {user.nameLast}</p>
-                <p>eMail: {user.email}</p>
-                <p>Phone Number: {user.phoneNumber}</p>
-                <p>References: {user.references}</p>
+                {contact.map((contactDat) => (
+                    <h2
+                        to={`/Contact/${contactDat.nameFirst}`}>
+                        {contactDat.nameFirst}{' '}
+                        {contactDat.nameLast}{' '}
+                        {contactDat.email}{' '}
+                        {contactDat.phoneNumber}{' '}
+                        {contactDat.references}</h2>
+                ))}
             </div>
         </div>
     );
