@@ -95,6 +95,12 @@
       display: inline;
     }
   }
+
+  .myName {
+    padding: 8px;
+    display: flex;
+border: 5px solid #395B64;
+  }
   
   .NavAnimation-enter {
     opacity: 0;

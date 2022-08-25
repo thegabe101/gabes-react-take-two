@@ -52,11 +52,11 @@ export default function Header() {
                 unmountOnExit
             >
                 <nav className="Nav is-primary" role="navigation" aria-label="main navigation">
-                    <a href="#">My name is Gabriel Sowa.</a>
+                    <Link className="myName" to='/'>My name is Gabriel Sowa.</Link>
                     <Link to='/Portfolio'>Portfolio</Link>
                     <Link to='/Resume'>Resume</Link>
                     <Link to='/Contact'>Contact</Link>
-                    <Link to='/Contact'>About Me</Link>
+                    <Link to='/'>About Me</Link>
                 </nav >
             </CSSTransition >
             <button onClick={toggleNav} className="Burger">
