@@ -4,28 +4,88 @@ import image1 from './images/20200604_113716.jpg';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-// import { BrowserRouter, Route, Router } from 'react-router-dom';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Outlet, Link } from "react-router-dom";
 
-function App(props) {
-  // const isAboutMe = props.isAboutMe
 
+//here is our test-working app export function
+export default function app() {
   return (
     <div className='primaryDiv'>
-      {/* <Router> */}
       <Header />
-      <figure className="banner">
+      <figure className='banner'>
         <img className="banner-img" src={image1} style={{ height: 50 }} />
       </figure>
       <AboutMe />
-      {/* <Route path="/contact"> */}
-      {/* <Contact /> */}
-      {/* </Route> */}
       <Footer />
-      {/* </Router> */}
-
     </div>
-
   );
-}
+};
 
-export default App;
+
+
+
+
+
+
+
+// function App(props) {
+//   // const isAboutMe = props.isAboutMe
+
+//   return (
+//     <div className='primaryDiv'>
+//       {/* <Router> */}
+//       <Header />
+//       <figure className="banner">
+//         <img className="banner-img" src={image1} style={{ height: 50 }} />
+//       </figure>
+//       <AboutMe />
+//       {/* <Route path="/contact"> */}
+//       {/* <Contact /> */}
+//       {/* </Route> */}
+//       <Footer />
+//       {/* </Router> */}
+
+//     </div>
+
+//   );
+// }
+
+
+
+
+// const App = () => {
+
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/aboutme" element={<AboutMe />} />
+//         <Route path="/resume" element={<Resume />} />
+//         <Route path="/portfolio" element={<Portfolio />} />
+//         <Route path="/contact" element={<Contact />} />
+//       </Routes>
+//     </Router>
+//   )
+// }
+
+// export default function App() {
+//   return (
+//     <div>
+//       <h1>Bookkeeper</h1>
+//       <nav
+//         style={{
+//           borderBottom: "solid 1px",
+//           paddingBottom: "1rem",
+//         }}
+//       >
+//         <Link to="/invoices">Invoices</Link> |{" "}
+//         <Link to="/expenses">Expenses</Link>
+//       </nav>
+//     </div>
+//   );
+// }
+
+
+
