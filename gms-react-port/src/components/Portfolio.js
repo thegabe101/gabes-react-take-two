@@ -7,6 +7,8 @@ import workdayscheduler from '../images/workdayscheduler.jpg';
 // import notetaker from '../images/notetaker.png';
 import notetaking from '../images/note-taking.png';
 import Footer from './Footer';
+import teamProfileGenerator from '../images/team-cover.png';
+import PWAimg from '../images/pwa-img.png';
 import './Footer.css';
 
 
@@ -23,16 +25,16 @@ export default function Portfolio() {
             <a href="https://thegabe101.github.io/Project-1-Rainer-Matt-Ming-Gabe/"><img className="card" src={dog4you}></img></a>
           </div>
           <div className="card">
-            <a href="https://shelf-space.herokuapp.com/"><img src={shelfspace}></img></a>
+            <a href="https://shelf-space.herokuapp.com/"><img className="card" src={shelfspace}></img></a>
             {/* <h3 class="title">shelfspace</h3> */}
           </div>
           <div className="card">
-            <a href="https://express-note-taker-gabe-2.herokuapp.com/"><img classname="card" src={notetaking}></img></a>
+            <a href="https://express-note-taker-gabe-2.herokuapp.com/"><img className="card" src={notetaking}></img></a>
           </div>
           <div className="card">
-            <img></img>
+            <a href="https://github.com/thegabe101/OOP-team-profile-generator"><img className="card" src={teamProfileGenerator}></img></a>
           </div>        <div className="card">
-            <img></img>
+            <a href="https://gabe-pwa-note-taker.herokuapp.com/"><img className="card" src={PWAimg}></img></a>
           </div>
           <div className="card">
             <h3 className="title">Future project here...</h3>

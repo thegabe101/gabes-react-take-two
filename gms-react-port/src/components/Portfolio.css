@@ -25,20 +25,17 @@ body {
     justify-content: space-between;
   }
   
+  
   .card {
     display: flex;
     height: 300px;
-    width: 200px;
+    width: 250px;
     background-color: #17141d;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
-  }
-
-  .dog4you {
-    color: black;
   }
   
   .card:not(:first-child) {
@@ -63,16 +60,6 @@ body {
     position: absolute;
     left: 20px;
     top: 15px;
-  }
-
-  .title > .dog4you {
-    font-size: x-large;
-    color: black;
-    font-weight: 400;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    z-index: 1;
   }
   
   .bar {
@@ -130,7 +117,7 @@ body {
   }
 
   @media screen and (max-width: 800px) {
-    .container .card {
+    .card {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;

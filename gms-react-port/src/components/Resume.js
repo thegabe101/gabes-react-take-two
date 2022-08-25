@@ -11,6 +11,7 @@ import css from '../images/css.png';
 import html5 from '../images/html5.png';
 import mysql from '../images/mysql.png';
 import './Portfolio.css';
+// import { AiOutlineHtml5 } from 'react-icons/AiOutlineHtml5';
 
 export default function Resume() {
     return (
@@ -26,10 +27,10 @@ export default function Resume() {
                 </div>
                 <div className="languages">
                     <div>
-                    <img className="programmingLanguages" src={html5}></img>
+                        <img className="programmingLanguages" src={html5}></img>
                     </div>
                     <div>
-                    <img className="programmingLanguages" src={js}></img>
+                        <img className="programmingLanguages" src={js}></img>
                     </div>
                     <img className="programmingLanguages" src={css}></img>
                     <img className="programmingLanguages" src={mysql}></img>
