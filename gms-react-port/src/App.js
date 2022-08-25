@@ -8,10 +8,29 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Outlet, Link } from "react-router-dom";
+import { useState } from 'react';
 
 
 //here is our test-working app export function
-export default function app() {
+export default function App() {
+  const [fakePeople, setFakePeople] = useState([{
+    name: "Bob",
+    email: "Bob@gmail.com",
+    message: "Hi Gabe, I'd love to work with you!"
+  },{
+    name: "Tom",
+    email: "Tom@gmail.com",
+    message: "Hey, let me know if you would like to work together!"
+  }, {
+    name: "Lucy",
+    email: "Lucy@gmail.com",
+    message: "Wow! I love your work!"
+  }])
+
+  const addContactInfo = contactObj => {
+    setFakePeople([...fakePeople, contactObj])
+  }
+
   return (
     <div className='primaryDiv'>
       <Header />

@@ -1,0 +1,17 @@
+.resumePhoto {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.resume_content {
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.programmingLanguages {
+    max-width: 300px;
+    max-height: 300px;
+}
