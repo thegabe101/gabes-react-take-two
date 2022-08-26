@@ -32,11 +32,17 @@ This was a primarily front-end project focused on using newly learned skills in 
 
 -   Currently there are several bugs within the program:
 
+-   Some of the pages do not media query properly and stack as they should. I ran out of time trying to make this work but is a top priority to fix in the future.
+-   I was not able to complete the form for submitting contact info.
+-   Small CSS glitches such as deadspace and improperly placed borders.
+
 ## Screenshots
 
--   ![Alt= ](./screenshots/screenshot1.jpg)
--   ![Alt= ](./screenshots/screenshot2.jpg)
--   ![Alt= ](./screenshots/screenshot3.jpg)
+-   ![Alt= A look at the landing page.](./screenshots/screenshot1.jpg)
+-   ![Alt= A look at the landing page in mobile format.](./screenshots/screenshot2.jpg)
+-   ![Alt= A look at the file structure.](./screenshots/screenshot3.jpg)
+-   ![Alt= A look at the command necessary to start the app. ](./screenshots/screenshot4.jpg)
+-   ![Alt= A look at a successful build response after CLI "npm start."](./screenshots/screenshot5.jpg)
 
 ## Credits
 
