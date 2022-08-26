@@ -8,7 +8,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height:5vh;
+    height:4vh;
     color: #E7F6F2;
     border: 4px solid rgba(0,0,0,0.5);
     margin-top: auto;
@@ -17,5 +17,7 @@
 @media screen and (max-width: 800px) {
     .footer {
         padding-top: 4px;
+        position: fixed;
+        height: 3vh
     }
   }

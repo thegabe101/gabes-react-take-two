@@ -7,7 +7,7 @@ body {
   }
   
 .portfolioTitle {
-    margin-top: 5%;
+    margin-top: 6%;
     display:block;
     justify-content: center;
     word-wrap: normal;
@@ -117,7 +117,7 @@ body {
   }
 
   @media screen and (max-width: 800px) {
-    .card {
+    .container .card {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;

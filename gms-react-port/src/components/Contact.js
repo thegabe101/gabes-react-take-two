@@ -38,8 +38,8 @@ export default function Contact(props) {
                 {contact.map((contactDat) => (
                     <h2
                         to={`/Contact/${contactDat.nameFirst}`}>
-                        {contactDat.nameFirst}{' '}
-                        {contactDat.nameLast}{' '}
+                        {/* {contactDat.nameFirst}{' '} */}
+                        {/* {contactDat.nameLast}{' '} */}
                         {contactDat.email}{' '}
                         {contactDat.phoneNumber}{' '}
                         {contactDat.references}</h2>
