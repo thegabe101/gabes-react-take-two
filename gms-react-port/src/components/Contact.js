@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Link } from "react-router-dom";
-import getContactData from "../data/contactData";
+import getContactData from "../images/data/contactData";
 import { useEffect, useState } from 'react';
 import Header from './Header';
 import profilePicture from '../images/J Wedding Cropped.jpg';
